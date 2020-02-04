@@ -4,7 +4,7 @@ A collection of use full unity classes that I use in most of my projects
 
 ## Explination
 
-The scripts are devided in two folders. Classes and Utils. The scripts in utils are static and you can just use it by calling the `classname.function()`. The scripts in classes are not static so they need to be declared like objects. For example `ClassName classname = new ClassName()`.
+You can find the explination and examples on the repo's wiki. (Work In Progress) 
 
 ## Requests
 
@@ -18,10 +18,11 @@ Feel free to use this in any way. Exept for selling it or using it without discl
 
 A todo list ordered from important to less important
 - [ ] Check for spelling mistakes 
-- [ ] Add comments to explain what the script does
+- [ ] Expand the wiki pages with explination and examples
 - [ ] Expand the library
 - [ ] Build everything into a single DLL
 
 ## Credit
 
-- Code Money [Youtube](https://www.youtube.com/channel/UCFK6NCbuCIVzA6Yj1G_ZqCg) (For Utils/MeshUtils.cs)
+- TheNoNinja [Github](https://www.github.com/TheNoNinja)
+- Code Money [Youtube](https://www.youtube.com/channel/UCFK6NCbuCIVzA6Yj1G_ZqCg)
