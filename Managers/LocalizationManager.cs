@@ -14,18 +14,6 @@ public class LocalizationManager : MonoBehaviour
     public List<TextAsset> languageFiles = new List<TextAsset>();
     public List<Language> languages = new List<Language>();
 
-    private void Update(){
-      if (Input.GetKey (KeyCode.Space)){
-        LocalizationManager.instance.ChangeLocale(LocalizationManager.instance.currentLanguageID == 1 ? 0 : 1);
-      }
-      if (Input.GetKey(KeyCode.E)){
-        LocalizationManager.instance.ChangeLocale(1);
-      }
-      if (Input.GetKey(KeyCode.D)){
-        LocalizationManager.instance.ChangeLocale(0);
-      }
-    }
-
     void Awake()
     {
         if(instance == null)instance = this;
@@ -59,7 +47,7 @@ public class LocalizationManager : MonoBehaviour
                 }
             }
         }
-        return "Undefined\nPlease report to operator";
+        return "Undefined\nPlease report to developer!";
     }
 
     public void ChangeLocale(string languageString)
