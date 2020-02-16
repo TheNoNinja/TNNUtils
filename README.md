@@ -4,7 +4,7 @@ A collection of use full unity classes that I use in most of my projects
 
 ## Explination
 
-You can find the explination and examples on the repo's wiki. (Work In Progress) 
+You can find the explination and examples on the repo's [wiki](https://github.com/TheNoNinja/UnityUtils/wiki). (Work In Progress) 
 
 ## Requests
 
