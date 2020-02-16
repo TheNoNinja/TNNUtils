@@ -10,9 +10,8 @@ public class LocalizationManager : MonoBehaviour
 {
     public static LocalizationManager instance;
     public int currentLanguageID = 0;
-    [SerializeField]
-    public List<TextAsset> languageFiles = new List<TextAsset>();
-    public List<Language> languages = new List<Language>();
+    [SerializeField] public List<TextAsset> languageFiles = new List<TextAsset>();
+    [HideInInspector] public List<Language> languages = new List<Language>();
 
     void Awake()
     {
