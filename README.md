@@ -25,4 +25,4 @@ A todo list ordered from important to less important
 ## Credit
 
 - TheNoNinja [Github](https://www.github.com/TheNoNinja)
-- Code Money [Youtube](https://www.youtube.com/channel/UCFK6NCbuCIVzA6Yj1G_ZqCg)
+- Code Monkey [Youtube](https://www.youtube.com/channel/UCFK6NCbuCIVzA6Yj1G_ZqCg)
