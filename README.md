@@ -24,5 +24,5 @@ A todo list ordered from important to less important
 
 ## Credit
 
-- TheNoNinja [Github](https://www.github.com/TheNoNinja)
+- TheNoNinja [Github](https://www.github.com/TheNoNinja) [Portfolio](https://christiaanbrant.com/)
 - Code Monkey [Youtube](https://www.youtube.com/channel/UCFK6NCbuCIVzA6Yj1G_ZqCg)
