@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Language Name="English">
+    <text Key="EXAMPLE">Example</text>
+    <text Key="ANOTHER_EXAMPLE">Just another example</text>
+</Language>
