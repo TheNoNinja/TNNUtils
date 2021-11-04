@@ -10,6 +10,6 @@
         public static float EaseNormal(float value)
         {
             return value * value * value * (value * (value * 6 - 15) + 10);
-        }
+        } 
     }
 }

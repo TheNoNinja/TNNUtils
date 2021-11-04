@@ -1,4 +1,6 @@
-﻿namespace TNNUtils.Random
+﻿using TNNUtils.Misc;
+
+namespace TNNUtils.Random
 {
     public static class Perlin
     {
@@ -34,14 +36,14 @@
 		        xi -= 1;
 	        }
             
-            var u = Misc.Math.EaseNormal(xf);
+            var u = Math.EaseNormal(xf);
             
             var a  = Permutation512[xi];
             var aa = Permutation512[a];
             var b  = Permutation512[xi+1];
             var ba = Permutation512[b];
         
-            var x1 = Misc.Math.Lerp(
+            var x1 = Math.Lerp(
                 Gradient (Permutation512[aa], xf, 0),
                 Gradient (Permutation512[ba], xf-1, 0),
                 u);
@@ -69,8 +71,8 @@
 		        yi -= 1;
 	        }
 	        
-	        var u = Misc.Math.EaseNormal(xf);
-	        var v = Misc.Math.EaseNormal(yf);
+	        var u = Math.EaseNormal(xf);
+	        var v = Math.EaseNormal(yf);
 			
 	        var a  = Permutation512[xi]+yi;
 	        var aa = Permutation512[a];
@@ -79,15 +81,15 @@
 	        var ba = Permutation512[b];
 	        var bb = Permutation512[b+1];
 			
-	        var x1 = Misc.Math.Lerp(	
+	        var x1 = Math.Lerp(	
 		        Gradient(Permutation512[aa], xf, yf),			
 		        Gradient(Permutation512[ba], xf-1, yf),			
 		        u);										
-	        var x2 = Misc.Math.Lerp(	
+	        var x2 = Math.Lerp(	
 		        Gradient(Permutation512[ab], xf, yf-1),
 		        Gradient(Permutation512[bb], xf-1, yf-1),
 		        u);
-	        var y1 = Misc.Math.Lerp(x1, x2, v);
+	        var y1 = Math.Lerp(x1, x2, v);
 
 	        return (y1+1)/2;
         }
@@ -120,9 +122,9 @@
 			    zi -= 1;
 		    }
 
-		    var u = Misc.Math.EaseNormal(xf);
-		    var v = Misc.Math.EaseNormal(yf);
-		    var w = Misc.Math.EaseNormal(zf);
+		    var u = Math.EaseNormal(xf);
+		    var v = Math.EaseNormal(yf);
+		    var w = Math.EaseNormal(zf);
 			
 		    var a  = Permutation512[xi]+yi;
 		    var aa = Permutation512[a]+zi;
@@ -131,27 +133,27 @@
 		    var ba = Permutation512[b]+zi;
 		    var bb = Permutation512[b+1]+zi;
 			
-			var x1 = Misc.Math.Lerp(	
+			var x1 = Math.Lerp(	
 				Gradient(Permutation512[aa], xf, yf, zf),			
 				Gradient(Permutation512[ba], xf-1, yf, zf),			
 						u);										
-			var x2 = Misc.Math.Lerp(	
+			var x2 = Math.Lerp(	
 				Gradient(Permutation512[ab], xf, yf-1, zf),
 				Gradient(Permutation512[bb], xf-1, yf-1, zf),
 						u);
-			var y1 = Misc.Math.Lerp(x1, x2, v);
+			var y1 = Math.Lerp(x1, x2, v);
 
-			x1 = Misc.Math.Lerp(	
+			x1 = Math.Lerp(	
 				Gradient(Permutation512[aa+1], xf, yf, zf-1),
 				Gradient(Permutation512[ba+1], xf-1, yf, zf-1),
 						u);
-			x2 = Misc.Math.Lerp(	
+			x2 = Math.Lerp(	
 				Gradient(Permutation512[ab+1], xf, yf-1, zf-1),
 				Gradient(Permutation512[bb+1], xf-1, yf-1, zf-1),
 		          		u);
-			var y2 = Misc.Math.Lerp (x1, x2, v);
+			var y2 = Math.Lerp (x1, x2, v);
 			
-			return (Misc.Math.Lerp (y1, y2, w)+1)/2;
+			return (Math.Lerp (y1, y2, w)+1)/2;
         }
 
         public static float FractalBrownianMotion(float x, int octaves)
